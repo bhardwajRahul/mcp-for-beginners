@@ -18,7 +18,7 @@ from openai import OpenAI
 # Create server parameters for stdio connection
 server_params = StdioServerParameters(
     command="python",  # Using python to run the server
-    args=["sample-server.py"]
+    args=["server.py"]
 )
 
 async def call_llm(prompt: str, system_prompt: str) -> str:
